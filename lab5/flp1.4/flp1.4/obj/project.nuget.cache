@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rD9GqE5N/+hf7hJjqi/Pq2bwTBThWajmM5gg/Sx5EslykWqPuJyDlIuPxjD31fcOeNY+uUEO+0o/0CxxrHmtvQ==",
+  "dgSpecHash": "EOhpDQtrqWjZFEmzlcTPWM3tk159+h08nrXY0zG+sahc/vMUknUU4jVt/k5X/VxyXK9rDuXcqz7UK/2LESfsgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\flp1.4\\flp1.4\\flp1.4.fsproj",
+  "projectFilePath": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\lab5\\flp1.4\\flp1.4\\flp1.4.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512"
   ],
