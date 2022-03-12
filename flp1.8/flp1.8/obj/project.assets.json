@@ -119,11 +119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\flp1.8\\1.8\\1.8\\1.8.fsproj",
+      "projectUniqueName": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\flp1.8\\1.8\\1.8.fsproj",
       "projectName": "1.8",
-      "projectPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\flp1.8\\1.8\\1.8\\1.8.fsproj",
+      "projectPath": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\flp1.8\\1.8\\1.8.fsproj",
       "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\flp1.8\\1.8\\1.8\\obj\\",
+      "outputPath": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\flp1.8\\1.8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
