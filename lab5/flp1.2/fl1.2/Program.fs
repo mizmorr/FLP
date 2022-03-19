@@ -1,6 +1,5 @@
 ﻿open System
 let func1  a =
-    printfn "%s"("fav lang?") 
     match a with
     |a when a ="Prolog" -> "sneaky"
     |a when a ="F#"-> "You are podliza"
@@ -11,22 +10,17 @@ let func1  a =
 let write a   =
     printfn "%A" a 
 
-let  ob = Console.ReadLine()
+let  ob = 
+    printfn "%s"("fav lang?") 
+    Console.ReadLine()
+ 
+//let main = 
+//    let ffunc=func1>>write
+//    ffunc ob
+
+//let main  =
+//    let ffunc a = write(func1 a)
+//    ffunc ob
+
     
-[<EntryPoint>]
-
-let main func  =  
-    let fff a =
-        match a with
-        |a when System.String.IsNullOrEmpty(a.ToString())=false -> write(func1 a)
-        |_ -> ( )
-    fff ob
-0
-
-//let main func  =
-//    let func2 a  = 
-//         a+5
-//    func2 5
-
-
     
