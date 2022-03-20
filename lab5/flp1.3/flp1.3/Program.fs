@@ -27,7 +27,7 @@ let mmin d=
 let rec mult a=
     match a with
     |a when a=1->1
-    |a->a%10*mult(a/10)
+    |_->a%10*mult(a/10)
 //let rec min a =
 //    match a with
 //    |

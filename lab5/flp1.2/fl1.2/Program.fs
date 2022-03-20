@@ -8,15 +8,16 @@ let func1  a =
     | _ -> "idk"
 
 let write a   =
-    printfn "%A" a 
+    printfn "%s" a 
 
 let  ob = 
     printfn "%s"("fav lang?") 
     Console.ReadLine()
- 
-//let main = 
-//    let ffunc=func1>>write
-//    ffunc ob
+[<EntryPoint>]
+let main ar = 
+    let ffunc=func1>>write
+    ffunc ob
+    0
 
 //let main  =
 //    let ffunc a = write(func1 a)
