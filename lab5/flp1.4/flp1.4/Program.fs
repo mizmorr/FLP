@@ -1,21 +1,31 @@
 ﻿open System
 
-let rec del (func:int->int->int)  a acc =  
-    let z = acc
-    match acc with
-    |acc when acc<a ->
-        match acc with
-        |acc when a%acc=0 ->
-            func acc z
-            del func a (acc+1)
-        |_->del func a (acc+1)
+let del (func:int->int->int)  a =  
+    let rec dDel func a cuRn eValue = 
+        match cuRn with
+        |cuRn when cuRn = a -> eValue 
+        |_-> 
+            match cuRn with
+            |cuRn when a%cuRn=0 ->
+                let  nValue=func cuRn eValue
+                dDel func a (cuRn+1)  nValue
+             |_->dDel func a (cuRn+1)  eValue
+    dDel func a 1  1
 
 
-let print a b = 
-    printfn "%i" (a)
-    printfn "%i" (b)
-let s a b = a+b 
+let sum a b = a+b 
+let min a b= 
+    match a with
+    |a when a<b->a
+    |_->b
+
+let max a b = 
+    match a with
+    |a when a>b->a
+    |_->b
+
+let mult a b = a*b
 [<EntryPointAttribute>]
 let main arg =
-    printfn "%i " (del s 6 1)
+    printfn "%A " (del mult 6) //for sum - dDel a 1 0
     0
