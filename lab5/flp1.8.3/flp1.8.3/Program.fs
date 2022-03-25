@@ -20,18 +20,23 @@ let rec gcd x y =
     |_-> gcd y (x%y)
 let IsNotCoprIntg x y = gcd x y <> 1
 
-let del (func:int->int->int)  a =  
-    let rec dDel func a cuRn eValue = 
-        match cuRn with
-        |cuRn when cuRn = a -> eValue 
-        |_-> 
-            match cuRn with
-            |cuRn when a%cuRn=0 ->
-                let  nValue=func cuRn eValue
-                dDel func a (cuRn+1)  nValue
-             |_->dDel func a (cuRn+1)  eValue
-    dDel func a 1  1
+let IsEasy (a:int) =
+    let rec IseEasy a acc (value:bool) =
+        match acc with
+        |acc when acc=a/2 ->value
+        |_->
+                match acc with
+                |acc when a%acc=0 -> IseEasy a (acc+1) false
+                |_->IseEasy a (acc+1) value
+    IseEasy a 2 true
 
+
+let rec dDel a cuRn = 
+        match cuRn with
+        |cuRn when a%cuRn=0 -> cuRn
+        |_-> 
+               dDel  a (cuRn+1) 
+       
 let min a b= 
     match a with
     |a when a<b->a
@@ -42,26 +47,28 @@ let max a b =
         |b when b<a->a
         |_->b
     
-let mindel a =
-    del min a
+let miNdel a = 
+    match a with
+    |a when IsEasy a ->1
+    |_->dDel a 2
 
-let maxint a c =
+let maXint a c =
     let rec mMaxint a c cuRn value = 
         match cuRn with
         |cuRn when cuRn=c -> value
         |_-> 
             match cuRn with
-            |cuRn when IsNotCoprIntg a cuRn&&cuRn%mindel a<>0 ->
+            |cuRn when IsNotCoprIntg a cuRn&&cuRn%(miNdel a)<>0->
                 let nvalue = max value cuRn
                 mMaxint a c (cuRn+1) nvalue
             |_->mMaxint a c (cuRn+1) value
     mMaxint a c 1 1
 
-let resFunc a c = sum5 a * maxint a c
+let resFunc a c = sum5 a * maXint a c
 
 [<EntryPoint>]
 
 let main func = 
-    printfn "%i" (resFunc 35 200)
+    printfn "%i" (resFunc 24 250)
     0
 
