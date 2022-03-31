@@ -1,8 +1,4 @@
 ﻿open System
-let mm a b =
-    match a with
-    |a when a>b -> b
-    |_-> a
 let rec readlist n =
     match n with
     |n when n=0 -> []
