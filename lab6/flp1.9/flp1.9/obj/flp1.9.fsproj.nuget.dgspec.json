@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\lab5\\flp2.0\\flp2.0\\flp2.0.fsproj": {}
+    "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab6\\flp1.9\\flp1.9\\flp1.9.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\lab5\\flp2.0\\flp2.0\\flp2.0.fsproj": {
+    "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab6\\flp1.9\\flp1.9\\flp1.9.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\lab5\\flp2.0\\flp2.0\\flp2.0.fsproj",
-        "projectName": "flp2.0",
-        "projectPath": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\lab5\\flp2.0\\flp2.0\\flp2.0.fsproj",
+        "projectUniqueName": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab6\\flp1.9\\flp1.9\\flp1.9.fsproj",
+        "projectName": "flp1.9",
+        "projectPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab6\\flp1.9\\flp1.9\\flp1.9.fsproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\Source\\Repos\\mizmorr\\FLP\\lab5\\flp2.0\\flp2.0\\obj\\",
+        "outputPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab6\\flp1.9\\flp1.9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
