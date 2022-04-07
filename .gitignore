@@ -1,2 +1,4 @@
 .vs*
 *\.vs*
+/lab7/7.60/7.60/obj
+/lab7/7.60/7.60/bin/Debug/net6.0
