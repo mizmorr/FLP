@@ -43,6 +43,9 @@ let preNumNums (str:string) =
 let NumNums (str:string) =
     String.length(preNumNums str)
 
+let NumWords (str:string) =
+    (str|>String.filter(fun x ->Char.IsSeparator x)).Length+1
+
 [<EntryPoint>]
 let main arg =
     let z =Console.ReadLine()
