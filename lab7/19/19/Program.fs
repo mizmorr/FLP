@@ -46,9 +46,24 @@ let NumNums (str:string) =
 let NumWords (str:string) =
     (str|>String.filter(fun x ->Char.IsSeparator x)).Length+1
 
+let present =
+    Console.Write(
+        "Выберите функцию из предложенных. После введите строку\n 1. Проверка на палиндром\n 2. Количество слов в строке(*слова вводятся с промежутком в один пробел, после последнего слова пробел отсутствует)\n 3. Количество различных цифр в записи\n")
+
+
+let chooser (str:string) (num:int) =
+    match num with
+        |1->printfn "res - %b" (IsPalindr str)
+        |2->printfn "res - %i" (NumWords str)
+        |3->printfn "res - %i" (NumNums str)
+        |_->printfn "ErrOrrr"
+
+
 [<EntryPoint>]
 let main arg =
-    let z =Console.ReadLine()
-    printfn "%s" (preNumNums z)
+    present
+    let num=System.Convert.ToInt32(Console.ReadLine())
+    let str = Console.ReadLine()
+    chooser str num
     0
    
