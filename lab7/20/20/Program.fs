@@ -84,15 +84,24 @@ let SortByInd str =
 let SortByNumMirror str =
     resSortList str NumMirror
 
+let present =
+    Console.Write ("Выберите функцию из предложенных. Введите размерность массива, после введите строки.\n 1. Отсортировать строки в порядке увеличения разницы между средним количеством соглас-
+ных и средним количеством гласных букв в строке\n2. Отсортировать строки в порядке увеличения среднего количества «зеркальных» троек (например, «ada») символов в строке.\n ")
+
+let chooser num str =
+    match num with
+    |1->writeStr (SortByInd str)
+    |2->writeStr (SortByNumMirror str)
+    |_->0
+
 [<EntryPoint>]
 let main arg =
+    present
     let z=Convert.ToInt32(Console.ReadLine())
-    //writeStr (readStrArr z)
-    writeStr (SortByNumMirror(readStrArr z))
-    //printfn "%A" (MakeIndList (readStrArr  z))
-    //printfn "%A" (Sort(readStrArr z))
-    //printfn "%A" (resSortList (readStrArr z))
-    //printfn"%A"(Sssorrt(readStrArr z))
+    let prechooser = chooser z 
+    let bomb =  readStrArr(Convert.ToInt32(Console.ReadLine()))|>prechooser
+    if bomb =0 then printfn "%A" "we have  probroblems......"
+    bomb
     0
    
     
