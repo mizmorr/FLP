@@ -2,6 +2,22 @@
 
 let glasstr = "aeyuioAEYUIO" 
 
+let readStrArr n =
+    let rec rsa n res =
+        match n with
+        |0 -> res
+        |_-> 
+            let z = Console.ReadLine()
+            rsa (n-1) (res@[z])
+    rsa n []
+
+let rec writeStr = function
+    [] -> let z =Console.ReadKey()
+          0
+    |(h:string)::tail->
+                                System.Console.WriteLine(h)
+                                writeStr(tail)
+
 let IsGLas a =
    String.length (glasstr|>String.filter(fun el -> el=a)) = 1
 
@@ -16,35 +32,68 @@ let NumSoglass (str:string) =
 let del (l1:int) (l2:int) =
     Convert.ToDouble(l1)/Convert.ToDouble(l2)
 
+let IfStringSame (str:string) =
+    Convert.ToChar(str.Substring(0,1))
+
+let preitem (str:string) (num:int) =
+    str.Substring(num,(str.Length-num))
+
+let item (str:string) (num:int) =
+    preitem str num|>IfStringSame
+
 let Indicator (str:string) =
     let ngInd = del (NumGlas str) (str.Length)
     let nsInd = del(NumSoglass str) (str.Length)
     nsInd-ngInd
 
 let SortString str =
-    List.sortBy(Indicator) str
+    List.sortBy (Indicator) str
+    
+let makeTuple str =
+    List.map(fun x ->(x ,Indicator x)) str
 
-let readStrArr n =
-    let rec rsa n res =
+let sort str =
+    List.sortBy(fun x -> snd x) (makeTuple str)
+
+let IsTripleMirror (str:string) =
+    if (item str 0 = item str 2&& item str 2<>item str 1)&&(Char.IsLetter (item str 0 ) = Char.IsLetter(item str 2)= Char.IsLetter(item str 1)) then true
+    else false
+
+let NumMirror (str:string) =
+    let rec boom n num =
         match n with
-        |0 -> res
-        |_-> 
-            let z =Console.ReadLine()
-            rsa (n-1) (res@[z])
-    rsa n []
+        |n when n = str.Length-2 -> num
+        |_->
+            let testStr = str.Substring(n,3)
+            if IsTripleMirror testStr then boom (n+1) (num+1)
+            else boom (n+1) num
+    boom 0 0 
 
-let rec writeStr = function
-    [] -> let z =Console.ReadKey()
-          0
-    |(h:string)::tail->
-                                System.Console.WriteLine(h)
-                                writeStr(tail)
 
+let bring y str func =
+    (List.filter (fun x -> func x=y) str).Head
+
+let resSortList str  funcPred=
+    let MakeNeedList = List.map (fun x -> (funcPred x)) str
+    let reallymndList =List.sort MakeNeedList
+    List.map (fun x-> bring x str funcPred) reallymndList
+
+let SortByInd str =
+    resSortList str Indicator
+
+let SortByNumMirror str =
+    resSortList str NumMirror
 
 [<EntryPoint>]
 let main arg =
     let z=Convert.ToInt32(Console.ReadLine())
-    writeStr (readStrArr z)
-    writeStr(SortString (readStrArr z))
+    //writeStr (readStrArr z)
+    writeStr (SortByNumMirror(readStrArr z))
+    //printfn "%A" (MakeIndList (readStrArr  z))
+    //printfn "%A" (Sort(readStrArr z))
+    //printfn "%A" (resSortList (readStrArr z))
+    //printfn"%A"(Sssorrt(readStrArr z))
+    0
+   
     
         
