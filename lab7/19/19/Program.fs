@@ -17,13 +17,8 @@ let item (str:string) (num:int) =
     preitem str num|>IfStringSame
 
 
-let IsPalindr (str:string) =
-     if (str.Length%2<>0) then false
-     else
-        let fsthalf=str.Substring(0,(Convert.ToInt32(str.Length)/2))
-        let sndhalf = rev (str.Substring((Convert.ToInt32(str.Length)/2),(Convert.ToInt32(str.Length)/2)))
-        if (String.length (String.filter(fun el ->el = item sndhalf (fsthalf.IndexOf el)) fsthalf))=fsthalf.Length then true
-        else false
+let IsPalindr (str:string) = rev str =str
+  
 
 
 
