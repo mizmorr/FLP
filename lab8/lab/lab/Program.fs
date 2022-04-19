@@ -12,13 +12,24 @@ type Passport ( name:string, surname:string, number:int, birthday:DateTime, birt
     member this.birthPlace =birthPlace
     override this.Equals(a) =
         match a with    
-        | :? Passport as p -> (p.number)=(this.number)
+        | :? Passport as p -> (p.number)=(this.number)&&(p.series)=(this.series)
         |_->false
+    interface IComparable with
+        member this.CompareTo obj =
+            match obj with
+            | :? Passport as passport -> 
+                                                        this.series.CompareTo(passport.series)
+                                                        this.number.CompareTo(passport.number)
+            | _->1
     override this.ToString() = "name: "+this.name+"\n surname: "+this.surname+"\n number: "+this.number.ToString()+"\n series: "+this.series.ToString()+"\n birthday: "+this.birthday.ToString()+"\n birthplace: "+this.birthPlace
     override this.GetHashCode() = number.GetHashCode()+series.GetHashCode()
 
+ 
+
 let PrintPassport (passport:Passport) =
     printfn " Passport:  \n %s" (passport.ToString())
+
+
 
 [<EntryPoint>]
 let main arg =
