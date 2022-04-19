@@ -59,10 +59,43 @@ type Passport (name:string, surname:string, number:int, birthday:string, birthPl
 let PrintPassport (passport:Passport) =
     printfn " Passport:  \n %s" (passport.ToString())
 
+[<AbstractClass>]
+type DocumentaryCollection() = abstract member searchDocument:Passport->bool
+
+type PassportList(pl: Passport list) =
+        inherit DocumentaryCollection()
+        member this.list: (Passport list) =pl
+        override this.searchDocument(passport:Passport) =
+            List.length(this.list|>List.filter(fun x-> x=passport))>0
+
+type PassportArray(pa: Passport array) =
+        inherit DocumentaryCollection()
+        member this.array: (Passport array) =pa 
+        override this.searchDocument(passport:Passport) =
+            Array.length(this.array|>Array.filter(fun u->u=passport))>0
+
+type PassportSet(ps: Passport list) =
+        inherit DocumentaryCollection()
+        member this.set: (Set<Passport>) = Set.ofList ps
+        override this.searchDocument(passport:Passport) =
+            this.set|>Set.contains passport
+
+type PassportBinaryList(pbs: Passport list) =
+        inherit DocumentaryCollection()
+        let BinarySearch(pl:Passport list) (p:Passport) =
+            let rec bsrec fpos lpos =
+                  if fpos > lpos then false
+                        else
+                        let mid = (fpos + lpos) / 2
+                        if p < pl.[mid] then bsrec fpos (mid-1)
+                        elif p > pl.[mid] then bsrec (mid+1) lpos
+                        else true
+            bsrec 0 (pl.Length-1)
+        member this.list:(Passport list)=List.sortBy(fun x->x.number) pbs
+        override this.searchDocument(passport:Passport) =
+            BinarySearch this.list passport
 
 
 [<EntryPoint>]
 let main arg =
-    let passport1=Passport("Ivan","Ivan",1 ,DateTime(5),"Ivan",2)
-    PrintPassport passport1
     0
