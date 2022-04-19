@@ -98,4 +98,36 @@ type PassportBinaryList(pbs: Passport list) =
 
 [<EntryPoint>]
 let main arg =
+    let rand=new Random();
+
+    let passportList = [for i in 1 ..10000 ->Passport("Bob","Brown",rand.Next(1,15000),"1:1:2000","Virginia",1)]
+    let testPassport = Passport("Bob","Brown",rand.Next(1,15000),"1:1:2000","Virginia",1)
+
+    let list = PassportList (passportList)
+    let array = PassportArray(List.toArray passportList)
+    let set = PassportSet(passportList)
+    let binarylist = PassportBinaryList(passportList)
+
+    let test = new Stopwatch()
+   
+    test.Start()
+    list.searchDocument(testPassport)|>ignore
+    test.Stop()
+    Console.WriteLine("list -{0} ", test.Elapsed)
+   
+    test.Restart()
+    array.searchDocument(testPassport)|>ignore
+    test.Stop()
+    Console.WriteLine("array - {0}", test.Elapsed)
+
+    test.Restart()
+    set.searchDocument(testPassport)|>ignore
+    test.Stop()
+    Console.WriteLine("set - {0}",test.Elapsed)
+
+    test.Restart()
+    binarylist.searchDocument(testPassport)|>ignore
+    test.Stop()
+    Console.WriteLine("binarylist - {0}", test.Elapsed)
+    
     0
