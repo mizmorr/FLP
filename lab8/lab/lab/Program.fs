@@ -14,6 +14,14 @@ type Passport ( name:string, surname:string, number:int, birthday:DateTime, birt
         match a with    
         | :? Passport as p -> (p.number)=(this.number)
         |_->false
-
-    override this.ToString() = "name: "+this.name+"\n surname:  " + this.surname+"\n number:  "+this.number.ToString()+"\n series: "+ this.series.ToString()+ "\n birthday: "+this.birthday.ToString()+"\n birthplace: "+this.birthPlace
+    override this.ToString() = "name: "+this.name+"\n surname: "+this.surname+"\n number: "+this.number.ToString()+"\n series: "+this.series.ToString()+"\n birthday: "+this.birthday.ToString()+"\n birthplace: "+this.birthPlace
     override this.GetHashCode() = number.GetHashCode()+series.GetHashCode()
+
+let PrintPassport (passport:Passport) =
+    printfn " Passport:  \n %s" (passport.ToString())
+
+[<EntryPoint>]
+let main arg =
+    let passport1=Passport("Ivan","Ivan",1 ,DateTime(5),"Ivan",2)
+    PrintPassport passport1
+    0
