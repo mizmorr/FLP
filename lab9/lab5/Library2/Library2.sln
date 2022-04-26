@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Library2", "Library2\Library2.fsproj", "{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design", "Design\Design.csproj", "{528B8F24-84E8-497F-8C90-30A8A53D6EA6}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "flp1.4", "..\..\..\lab5\flp1.4\flp1.4\bin\Debug\net6.0\flp1.4.exe", "{7D0BE383-3C8C-4038-BDED-DC255EDEB69C}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\1\source\repos\mizmorr\FLP\lab5\flp1.4\flp1.4\bin\Debug\net6.0\flp1.4.exe
+		RemoteMachine = KRDT
+		StartingDirectory = C:\Users\1\source\repos\mizmorr\FLP\lab5\flp1.4\flp1.4\bin\Debug\net6.0
+		Environment = По умолчанию
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Debug|x64.Build.0 = Debug|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Release|x64.ActiveCfg = Release|Any CPU
+		{93CD9853-2B5D-42F4-8FAC-28A9DEB75D87}.Release|x64.Build.0 = Release|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Debug|x64.Build.0 = Debug|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Release|x64.ActiveCfg = Release|Any CPU
+		{528B8F24-84E8-497F-8C90-30A8A53D6EA6}.Release|x64.Build.0 = Release|Any CPU
+		{7D0BE383-3C8C-4038-BDED-DC255EDEB69C}.Debug|Any CPU.ActiveCfg = Release|x64
+		{7D0BE383-3C8C-4038-BDED-DC255EDEB69C}.Debug|x64.ActiveCfg = Release|x64
+		{7D0BE383-3C8C-4038-BDED-DC255EDEB69C}.Release|Any CPU.ActiveCfg = Release|x64
+		{7D0BE383-3C8C-4038-BDED-DC255EDEB69C}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46C7B104-6FD3-4D30-897D-5A078F58A162}
+	EndGlobalSection
+EndGlobal
