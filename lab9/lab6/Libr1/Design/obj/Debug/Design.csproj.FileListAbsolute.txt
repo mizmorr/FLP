@@ -1,0 +1,10 @@
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\bin\Debug\Design.pdb
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.Form1.resources
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.Properties.Resources.resources
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.csproj.GenerateResource.cache
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.pdb
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\bin\Debug\Design.dll.config
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\bin\Debug\Design.dll
+C:\Users\1\source\repos\mizmorr\FLP\lab9\lab6\Libr1\Design\obj\Debug\Design.dll
