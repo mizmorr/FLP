@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "I44FkktT3rgkbwu4d3Ub8y4TLqvBjt+c8N79zrcgF6JTUCrxaUOXlcvl+T+L8P2MrCaZFpjwjueAgKYJl3UbfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab8\\lab6\\lab6.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\fparsec\\1.1.1\\fparsec.1.1.1.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
