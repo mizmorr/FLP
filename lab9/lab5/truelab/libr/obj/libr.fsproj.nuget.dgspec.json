@@ -4,6 +4,21 @@
     "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\libr\\libr.fsproj": {}
   },
   "projects": {
+    "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\Design\\Design.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\Design\\Design.csproj",
+        "projectName": "Design",
+        "projectPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\Design\\Design.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\libr\\libr.fsproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +46,11 @@
         "frameworks": {
           "net472": {
             "targetAlias": "net472",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\Design\\Design.csproj": {
+                "projectPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\Design\\Design.csproj"
+              }
+            }
           }
         }
       },
@@ -44,9 +63,24 @@
               "target": "Package",
               "version": "[6.0.2, )",
               "generatePathProperty": true
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )",
+              "generatePathProperty": true
+            },
+            "System.Reactive.Windows.Forms": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }

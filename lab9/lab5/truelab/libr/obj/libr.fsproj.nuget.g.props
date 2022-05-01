@@ -14,6 +14,8 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSystem_Reactive_Windows_Forms Condition=" '$(PkgSystem_Reactive_Windows_Forms)' == '' ">C:\Users\1\.nuget\packages\system.reactive.windows.forms\5.0.0</PkgSystem_Reactive_Windows_Forms>
+    <PkgSystem_Drawing_Common Condition=" '$(PkgSystem_Drawing_Common)' == '' ">C:\Users\1\.nuget\packages\system.drawing.common\6.0.0</PkgSystem_Drawing_Common>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\1\.nuget\packages\fsharp.core\6.0.2</PkgFSharp_Core>
   </PropertyGroup>
 </Project>

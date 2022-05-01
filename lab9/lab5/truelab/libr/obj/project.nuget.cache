@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "MIFwQCw3I8b8fF1shT0A8REwFmOF/4SjOVZrYeTE6a7Zthl80Cyu3QtFaT1ADPKka628az/1Bs/B94XxxvVdBQ==",
+  "dgSpecHash": "ZEB/t3WjD5yusBqaDUR/EZYxIFFDsSV0HUXg2GDEEJ5W9xnIDQNKkUImHQRZJHeiC6H4ImtiP7myRXjss1QN8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab5\\truelab\\libr\\libr.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+    "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.reactive.windows.forms\\5.0.0\\system.reactive.windows.forms.5.0.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
