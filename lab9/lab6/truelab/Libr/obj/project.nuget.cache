@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "mJwDYI4pFfyHDuW+nngh2IB4GeodWilfqaAX3sIsbzRkyDsQ83zwkZZhNYyMhOeeg+lBe2cWnDgrqxd+Q3IvKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab6\\truelab\\Libr\\Libr.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.windowsapicodepack-core\\1.1.0\\microsoft.windowsapicodepack-core.1.1.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\microsoft.windowsapicodepack-shell\\1.1.0\\microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.runtime.windowsruntime\\4.7.0\\system.runtime.windowsruntime.4.7.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.7.0\\system.runtime.windowsruntime.ui.xaml.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
