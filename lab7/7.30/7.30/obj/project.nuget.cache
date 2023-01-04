@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u4BNhy6Slx7DbVN81eGWQcIv8Up7x4wUdwX/Kk34fuFsdMixqKed+sgqnk14rmx8J3SvE7PDJKvnYzuYY1Ldvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab6\\7.30\\7.30\\7.30.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.1\\fsharp.core.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

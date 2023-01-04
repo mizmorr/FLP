@@ -1,0 +1,512 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "FSharp.Core/6.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FSharp.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Core.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "Microsoft.WindowsAPICodePack-Core/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "Microsoft.WindowsAPICodePack-Shell/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.WindowsAPICodePack-Core": "1.1.0"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.7.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win7-x86": {
+      "FSharp.Core/6.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FSharp.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Core.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "Microsoft.WindowsAPICodePack-Core/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "Microsoft.WindowsAPICodePack-Shell/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.WindowsAPICodePack-Core": "1.1.0"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {},
+          "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "buildTransitive/net461/System.Runtime.WindowsRuntime.targets": {}
+        }
+      },
+      "System.Runtime.WindowsRuntime.UI.Xaml/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.WindowsRuntime": "4.7.0"
+        },
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "build": {
+          "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FSharp.Core/6.0.2": {
+      "sha512": "8GZqv6buY71KQlWT+cl2eMi+aNX9xQ61RgI3Pzv9zPxPOX6tWCLRrBj0MYQ3h871r2RhiHUl7f0AXUD/POr8eA==",
+      "type": "package",
+      "path": "fsharp.core/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "contentFiles/any/netstandard2.0/FSharp.Core.xml",
+        "contentFiles/any/netstandard2.1/FSharp.Core.xml",
+        "fsharp.core.6.0.2.nupkg.sha512",
+        "fsharp.core.nuspec",
+        "lib/netstandard2.0/FSharp.Core.dll",
+        "lib/netstandard2.0/FSharp.Core.xml",
+        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/FSharp.Core.dll",
+        "lib/netstandard2.1/FSharp.Core.xml",
+        "lib/netstandard2.1/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
+      ]
+    },
+    "Microsoft.WindowsAPICodePack-Core/1.1.0": {
+      "sha512": "jU5Y9fvuC/USod2RCCHhs1PJ/T5ANBIXPhNpew53s5SDfRzvIE97XcIt9U8Wm+DF0bTJAdF9v9PD0cgbTi7uMg==",
+      "type": "package",
+      "path": "microsoft.windowsapicodepack-core/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.XML",
+        "lib/Microsoft.WindowsAPICodePack.dll",
+        "lib/Microsoft.WindowsAPICodePack.pdb",
+        "microsoft.windowsapicodepack-core.1.1.0.nupkg.sha512",
+        "microsoft.windowsapicodepack-core.nuspec"
+      ]
+    },
+    "Microsoft.WindowsAPICodePack-Shell/1.1.0": {
+      "sha512": "8WvLG0TNTylzMB8gnZeZDG68/DsagAF64K35RC2Y/zocHp4e03Uj/kba6egQlq1+0uVv04FpLG+CmENEIN53rg==",
+      "type": "package",
+      "path": "microsoft.windowsapicodepack-shell/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/Microsoft.WindowsAPICodePack.Shell.pdb",
+        "lib/Microsoft.WindowsAPICodePack.Shell.xml",
+        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.XML",
+        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.dll",
+        "lib/Microsoft.WindowsAPICodePack.ShellExtensions.pdb",
+        "microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512",
+        "microsoft.windowsapicodepack-shell.nuspec"
+      ]
+    },
+    "System.Runtime.WindowsRuntime/4.7.0": {
+      "sha512": "RQxUkf37fp7MSWbOfKRjUjyudyfZb2u79YY5i1s+d7vuD80A7kmr2YfefO0JprQUhanxSm8bhXigCVfX2kEh+w==",
+      "type": "package",
+      "path": "system.runtime.windowsruntime/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net45/System.Runtime.WindowsRuntime.targets",
+        "build/net451/System.Runtime.WindowsRuntime.targets",
+        "build/net461/System.Runtime.WindowsRuntime.targets",
+        "buildTransitive/net45/System.Runtime.WindowsRuntime.targets",
+        "buildTransitive/net451/System.Runtime.WindowsRuntime.targets",
+        "buildTransitive/net461/System.Runtime.WindowsRuntime.targets",
+        "lib/net45/_._",
+        "lib/netstandard1.0/System.Runtime.WindowsRuntime.dll",
+        "lib/netstandard1.0/System.Runtime.WindowsRuntime.xml",
+        "lib/netstandard1.2/System.Runtime.WindowsRuntime.dll",
+        "lib/netstandard1.2/System.Runtime.WindowsRuntime.xml",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.xml",
+        "lib/portable-win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.WindowsRuntime.dll",
+        "ref/netcore50/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/de/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/es/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/fr/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/it/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/ja/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/ko/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/ru/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.WindowsRuntime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/System.Runtime.WindowsRuntime.dll",
+        "ref/netstandard1.0/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/de/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/es/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/it/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/System.Runtime.WindowsRuntime.dll",
+        "ref/netstandard1.2/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/de/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/es/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/it/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.WindowsRuntime.xml",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.dll",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.xml",
+        "ref/portable-win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "runtimes/win-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win-aot/lib/uap10.0.16299/_._",
+        "runtimes/win/lib/netcore50/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.xml",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.runtime.windowsruntime.4.7.0.nupkg.sha512",
+        "system.runtime.windowsruntime.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.WindowsRuntime.UI.Xaml/4.7.0": {
+      "sha512": "6KDuUX4XfIJJyhvhYb40wZLHAXcKsObonUsvPzbmFh6VOQ9b/4zoUR33+VrzQo85+DGDI1RF9K4icQBD2sNRnw==",
+      "type": "package",
+      "path": "system.runtime.windowsruntime.ui.xaml/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net45/System.Runtime.WindowsRuntime.UI.Xaml.targets",
+        "build/net461/System.Runtime.WindowsRuntime.UI.Xaml.targets",
+        "lib/net45/_._",
+        "lib/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "lib/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "lib/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "lib/portable-win8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/netcore50/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/de/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/es/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/fr/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/it/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/ja/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/ko/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/ru/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/zh-hans/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netcore50/zh-hant/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/netstandard1.1/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/de/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/es/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/fr/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/it/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/ja/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/ko/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/ru/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/zh-hans/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard1.1/zh-hant/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "ref/netstandard2.0/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "ref/portable-win8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "runtimes/win-aot/lib/uap10.0.16299/_._",
+        "runtimes/win/lib/netcore50/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Runtime.WindowsRuntime.UI.Xaml.xml",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.runtime.windowsruntime.ui.xaml.4.7.0.nupkg.sha512",
+        "system.runtime.windowsruntime.ui.xaml.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "FSharp.Core >= 6.0.2",
+      "Microsoft.WindowsAPICodePack-Shell >= 1.1.0",
+      "System.Runtime.WindowsRuntime.UI.Xaml >= 4.7.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab6\\truelab\\Libr\\Libr.fsproj",
+      "projectName": "Libr",
+      "projectPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab6\\truelab\\Libr\\Libr.fsproj",
+      "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab6\\truelab\\Libr\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "dependencies": {
+          "FSharp.Core": {
+            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[6.0.2, )",
+            "generatePathProperty": true
+          },
+          "Microsoft.WindowsAPICodePack-Shell": {
+            "target": "Package",
+            "version": "[1.1.0, )",
+            "generatePathProperty": true
+          },
+          "System.Runtime.WindowsRuntime.UI.Xaml": {
+            "target": "Package",
+            "version": "[4.7.0, )",
+            "generatePathProperty": true
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}

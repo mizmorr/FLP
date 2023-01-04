@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "zG267xC8QbMba62WmxLVSo1yEcBi2lGqHUpWU5bv88lOwtpSMdqf/5X6x7ARlcjZ4ou8vSVLgKCxUEzhHp58lA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\1\\source\\repos\\mizmorr\\FLP\\lab9\\lab6\\Libr1\\Libr1\\Libr1.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.reactive.windows.forms\\5.0.0\\system.reactive.windows.forms.5.0.0.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\1\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
